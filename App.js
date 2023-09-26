@@ -3,6 +3,7 @@ import { StyleSheet, Text, View , Image, FlatList} from 'react-native';
 import ProductScreen from './src/Screens/ProductScreen';
 import ProductDetailsSCreen from './src/Screens/ProductDetailsScreen';
 import CartScreen from './src/Screens/CartScreen';
+import Navigator from './src/Navigator';
 
 export default function App() {
   return (
@@ -12,7 +13,9 @@ export default function App() {
         
         {/* <ProductDetailsSCreen/> */}
 
-        <CartScreen/>
+        {/* <CartScreen/> */}
+
+        <Navigator/>
 
       <StatusBar style="auto" />
     </View>
@@ -22,7 +25,7 @@ export default function App() {
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    backgroundColor: '#fff',
+    backgroundColor: 'white',
    
   },
   
