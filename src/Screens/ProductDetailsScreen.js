@@ -1,11 +1,12 @@
 import { View,Image,FlatList,StyleSheet, Text, ScrollView, Pressable } from "react-native";
 import { useWindowDimensions } from "react-native";
-import product from "../data/product";
+import { useSelector } from "react-redux";
 import { Ionicons } from "@expo/vector-icons";
 import Button from "../components/Button";
 
 const ProductDetailsSCreen = () => {
-    const Product = product[0];
+    const product = useSelector((state) => state.p)
+
     const {width} = useWindowDimensions();
     const addToCart = () =>{
         console.warn("added to cart....")
